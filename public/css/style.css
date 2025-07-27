@@ -1,5 +1,4 @@
 html, body {
-    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -15,6 +14,8 @@ body {
     background-color: #F2F4FF;
     padding: 1rem;
     box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .wrapper {
@@ -24,6 +25,7 @@ body {
     align-items: center;
     justify-content: center;
     max-width: 900px;
+    min-height: 100vh;
     width: 100%;
     padding: 2rem;
     box-sizing: border-box;
