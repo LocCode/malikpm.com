@@ -86,7 +86,7 @@ h2 {
     position: absolute;
     bottom: -3px;
     left: 0;
-    width: 0%;
+    width: 0;
     height: 2px;
     background-color: #3B3B98;
     transition: width 0.3s ease;
@@ -206,7 +206,7 @@ h1, h2, .welcome_text, .contact_title {
     position: absolute;
     bottom: -3px;
     left: 0;
-    width: 0%;
+    width: 0;
     height: 2px;
     background-color: var(--underline-color);
     transition: width 0.3s ease;
