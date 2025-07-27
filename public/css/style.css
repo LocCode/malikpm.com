@@ -18,6 +18,10 @@ body {
     overflow-y: auto;
 }
 
+b{
+    font-weight: 600;
+}
+
 .wrapper {
     position: relative;
     display: flex;
@@ -129,6 +133,13 @@ h2 {
 
     .contact_links li {
         margin: 0.5rem 0;
+    }
+
+
+    #theme-toggle {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
     }
 
 }
