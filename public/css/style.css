@@ -29,7 +29,7 @@ b {
 :root {
     --bg-color: #F2F4FF;
     --text-color: #000;
-    --link-color: #000;
+    --link-color: #000000;
     --link-hover: #3B3B98;
     --underline-color: #3B3B98;
 }
@@ -171,6 +171,77 @@ h2 {
 .theme-label {
     font-size: 0.9rem;
     transition: color 0.3s ease;
+}
+
+/* Skills section */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.skills h2 {
+    margin-bottom: 1rem;
+}
+
+.skills #skills_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills #skills_list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: var(--link-color);
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.skills #skills_sorting_buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills #skills_sorting_buttons li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.skills #skills_sorting_buttons li button{
+    border: none;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.skills #skills_sorting_buttons li button.active,
+.skills #skills_sorting_buttons li button:hover{
+    background-color: var(--underline-color);
+    color: #fff;
+    transition: background-color 0.3s ease;
 }
 
 /* Responsive: Mobile */
