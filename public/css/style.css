@@ -208,6 +208,7 @@ h2 {
     background-color: var(--link-color);
     color: #fff;
     font-size: 0.9rem;
+    cursor: move;
 }
 
 .skills #skills_sorting_buttons{
@@ -376,4 +377,17 @@ h2 {
         color: #fff;
         border-color: var(--underline-color);
     }
+}
+
+.dark-mode .skills #skills_list li{
+    background-color: #1e212e;
+}
+
+.dark-mode .skills #skills_sorting_buttons li button{
+    background-color: #e4e4e4;
+}
+
+.skills #skills_sorting_buttons li button.active,
+.skills #skills_sorting_buttons li button:hover{
+    background-color: var(--underline-color);
 }
