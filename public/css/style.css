@@ -70,6 +70,14 @@ h2 {
     font-size: 1.2rem;
     font-weight: 400;
     text-align: center;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
     margin-bottom: 2rem;
     color: var(--text-color);
 }
@@ -171,6 +179,47 @@ h2 {
 .theme-label {
     font-size: 0.9rem;
     transition: color 0.3s ease;
+}
+
+/* CV Link */
+.cv_link {
+    text-decoration: none;
+    background: var(--underline-color);
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 1rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.cv_link:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -150%;
+    }
+    30% {
+        left: 150%;
+    }
+    100% {
+        left: 150%;
+    }
 }
 
 /* Skills section */

@@ -284,7 +284,7 @@ class SkillsFilter {
         
         const touch = e.changedTouches[0];
         
-        // Find drop target
+        // Find the drop target
         this.draggedElement.style.pointerEvents = 'none';
         const elementBelow = document.elementFromPoint(touch.clientX, touch.clientY);
         this.draggedElement.style.pointerEvents = 'auto';
@@ -330,6 +330,7 @@ const skills = {
         { name: "Agile" },
         { name: "Kanban" },
         { name: "Scrum" },
+        { name: "Waterfall"},
         { name: "Stakeholder management" },
         { name: "Budgeting" },
         { name: "Resource planning" }
@@ -339,7 +340,10 @@ const skills = {
         { name: "SQL" },
         { name: "Lua" },
         { name: "API integrations" },
-        { name: "JQL" }
+        { name: "JQL" },
+        { name: "Git" },
+        { name: "Postman" },
+        { name: "Figma" },
     ],
     tools: [
         { name: "Jira" },
@@ -349,9 +353,6 @@ const skills = {
         { name: "Power BI" },
         { name: "Power Automate" },
         { name: "Microsoft 365" },
-        { name: "Git" },
-        { name: "Postman" },
-        { name: "Figma" },
         { name: "Miro" },
         { name: "ChatGPT" },
         { name: "Claude" },
